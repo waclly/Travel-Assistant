@@ -4,6 +4,11 @@ An intelligent AI-powered travel itinerary planner built with **FastAPI**, **Rea
 Users can enter their travel details — origin, destination, departure date, and trip length — and receive a personalized, AI-generated travel plan.  
 Each session is saved locally using **SQLite**, so returning visitors can view their previous itineraries.
 
+
+
+https://github.com/user-attachments/assets/24962572-c2e2-413c-b340-5d8883d587f5
+
+
 ---
 
 ## ✨ Features
