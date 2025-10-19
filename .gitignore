@@ -1,0 +1,94 @@
+# ======== Node / React (frontend) ========
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.DS_Store
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/package-lock.json
+frontend/.vite/
+frontend/.eslintcache
+frontend/.parcel-cache/
+
+# ======== Python / FastAPI (backend) ========
+backend/__pycache__/
+backend/*.py[cod]
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/env/
+backend/venv/
+backend/.env
+backend/.DS_Store
+backend/.coverage
+backend/instance/
+backend/.ruff_cache/
+backend/ai_travel.db
+
+# ======== General ========
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.env.local
+__pycache__/
+*.swp
+*.bak
+*.tmp
+*.orig
+
+# ======== OS / Editor files ========
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ======== Virtual environments ========
+venv/
+env/
+.venv/
+
+# ======== Build / Output ========
+dist/
+build/
+coverage/
+htmlcov/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ======== Testing / Reports ========
+.tox/
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+
+# ======== Docker / Deployment ========
+.dockerignore
+Dockerfile
+docker-compose.yml
+*.pid
+
+# ======== Logs ========
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ======== MacOS ========
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ======== Misc ========
+*.bak
+*.tmp
+*.old

@@ -1,0 +1,192 @@
+:root {
+    color-scheme: light dark;
+}
+
+/* --- Landing Page Background --- */
+body {
+  background: linear-gradient(to bottom right, #eef4ff, #d9e8ff);
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+
+/* 🔧 Responsive grid spacing fix */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    /* more space between boxes */
+    align-items: start;
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid color-mix(in oklab, CanvasText 15%, Canvas);
+    background: Canvas;
+    color: CanvasText;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.muted {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.loading {
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.day {
+    border-left: 4px solid #2563eb;
+    padding-left: 12px;
+    margin-top: 12px;
+}
+
+ul {
+    margin: 6px 0 0 18px;
+    padding: 0;
+}
+
+/* --- Select Dropdown Modern Style --- */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: Canvas;
+    border: 1px solid color-mix(in oklab, CanvasText 20%, Canvas);
+    border-radius: 10px;
+    padding: 10px 36px 10px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: CanvasText;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-image: linear-gradient(45deg, transparent 50%, color-mix(in oklab, CanvasText 60%, Canvas) 50%),
+        linear-gradient(135deg, color-mix(in oklab, CanvasText 60%, Canvas) 50%, transparent 50%);
+    background-position: calc(100% - 18px) calc(1em + 2px), calc(100% - 13px) calc(1em + 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+}
+
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+select:hover {
+    border-color: color-mix(in oklab, CanvasText 30%, Canvas);
+}
+
+/* optional: to fix dropdown arrow alignment on Safari */
+select::-ms-expand {
+    display: none;
+}
+
+/* ---- Navigation bar ---- */
+.navbar {
+  background: rgba(255, 255, 255, 0.75); 
+  backdrop-filter: blur(10px);          
+  -webkit-backdrop-filter: blur(10px);   
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 12px 16px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  font-weight: 600;
+}
+
+.nav-content a {
+  color: #1e3a8a;     
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-content a:hover {
+  color: #2563eb;           
+  transform: translateY(-1px);
+}
